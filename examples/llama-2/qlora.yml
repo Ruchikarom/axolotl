@@ -1,4 +1,5 @@
-base_model: NousResearch/Llama-2-7b-hf
+base_model: codellama/CodeLlama-7b-hf
+hub_model_id:EvolCodeLlama-7b
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 
@@ -7,7 +8,7 @@ load_in_4bit: true
 strict: false
 
 datasets:
-  - path: mhenrichsen/alpaca_2k_test
+  - path: mlabonne/Evol-Instruct-Python-1k
     type: alpaca
 dataset_prepared_path:
 val_set_size: 0.05
